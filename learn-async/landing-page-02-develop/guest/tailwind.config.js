@@ -1,0 +1,51 @@
+module.exports = {
+  content: ["./components/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      lineClamp: {
+        7: "7",
+      },
+    },
+    colors: {
+      gray800: "#333333",
+      white: " #FFFFFF",
+      black: "#121212",
+      gray400: "#C4C4C4",
+      blue100: "rgba(32, 157, 216, 0.2)",
+      black300: "#333333",
+      blue200: "#209DD8",
+      sky: "#209DD8",
+      gray100: "#f9f9f9",
+      gray500: "#C4C4C4",
+      red: "#ff0000",
+      gray200: "#E2E2E2",
+      gray300: "#E5E5E5",
+      graysearch: "#888888",
+      red1: "#cf0000",
+      bluebtn: "#209DD8",
+      darkblue: "#011C53",
+      grayf0: "#F0F0F0",
+      bluetext: "#3898D1",
+      bluebg: "#DCEBF2",
+      orangetitle: "#FFA800",
+      graye1: "#E1E0DB",
+      grayf6: "#F6F6F6",
+      blue011: "#011C53",
+      gray250: "#D7DAD6",
+      darkbluebg: "#222941",
+      buttonlogin: "#0092FF",
+      sky200: "#bae6fd",
+    },
+  },
+  variants: {
+    extend: {
+      display: ["group-hover"],
+    },
+  },
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+  ],
+};
